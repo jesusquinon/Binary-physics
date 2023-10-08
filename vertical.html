@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tiro Vertical</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script defer src="vertical.js"></script>
+        <style>
+            th{
+                color: dimgrey;
+            }
+
+            td{
+                color: black;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+					<div id="main">
+						<div class="inner">
+							<center>
+								<main><h1>Calcular Tiro Vertical</h1>
+                                <label for="tiempo">Introduzca el tiempo:</label>
+                                <input [type="text"] { text-align:center; }. id="tiempo">
+                                <br>
+                                <br>
+                                <label for="velo">Introduzca la velocidad inicial:</label>
+                                <input [type="text"] { text-align:center; }. id="velo">
+                                <br>
+                                <br>
+                                <input type="submit" value="Enviar" id="boton">
+                                <br>
+                                <br>
+                                <br> 
+                                <br>
+                                <br>
+                                <section>
+                                    <h2>Resultados y Procedimientos:</h2>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Velocidad Final (m/s):													</th>
+                                                    <th>Altura (m):													</th>
+                                                    <th>Altura Máxima (m):</th>
+                                                    <th>Tiempo en el Aire (s):</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><div id="resultado1"></div></td>
+                                                    <td><div id="resultado2"></div></td>
+                                                    <td><div id="resultado3"></div></td>
+                                                    <td><div id="resultado5"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p>(Velocidad Final (VF) - Velocidad Inicial (Vo))/Gravedad (g)</p></td>
+						<td><p>Altura (h) =
+							<br>(Velocidad inicial (Vo))*(Tiempo (t))+(Gravedad (g)*(Tiempo al Cuadrado (T))
+						</p></td>
+						<td><p>Altura Máxima (hmax) =
+							<br>(- Velocidad Inicial al Cuadrado (Vo)/2*Gravedad (g))</p></td>
+							<td><p>taire = 
+									<br>(Tiempo / Coeficiente de Fricción) * 2
+								</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </main></center>
+                            
+                            <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

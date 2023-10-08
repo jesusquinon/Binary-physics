@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Plano Horizontal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script defer src="planoinclinado.js"></script>
+        <style>
+            th{
+                color: dimgrey;
+            }
+
+            td{
+                color: black;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                            <center>
+							<h1>Calcular Plano Inclinado.</h1>
+							<main>
+                                <label for="num1">Ingrese Masa del Objeto:</label>
+                                <input [type="text"] { text-align:center; }. id="num1">
+                                <br>
+                                <br>
+                                <label for="num2">Ingrese Fuerza Aplicada (FA):</label>
+                                <input [type="text"] { text-align:center; }. id="num2">
+                                <br>
+                                <br>
+                                <label for="num3">Ingrese Ángulo de Elevación:</label>
+                                <input [type="text"] { text-align:center; }. id="num3">
+                                <br>
+                                <br>
+                                <label for="num4">Ingrese Distancia Recorrida:</label>
+                                <input [type="text"] { text-align:center; }. id="num4">
+                                <br>
+                                <br>
+                                <label for="num5">Ingrese Coeficiente de Fricción (Uc):</label>
+                                <input [type="text"] { text-align:center; }. id="num5">
+                                <br>
+                                <br>
+                                <input type="submit" value="Enviar" id="btnfuncion">
+                                <br>
+                                <br>
+                                <br> 
+                                <br>
+                                <br>
+                                <section>
+                                    <h2>Resultados y Procedimientos:</h2>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Peso del Objeto (N):													</th>
+                                                    <th>Fuerza Aplicada en el Vector X (N):													</th>
+                                                    <th>Fuerza Aplicada en el Vector Y (N):</th>
+                                                    <th>Fuerza Normal (N):</th>
+                                                    <th>Fuerza Cinética (N):</th>
+                                                    <th>Trabajo Mínimo (J):</th>
+                                                    <th>Trabajo Resultante (J):</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><div id="resultado1"></div></td>
+                                                    <td><div id="resultado2"></div></td>
+                                                    <td><div id="resultado3"></div></td>
+                                                    <td><div id="resultado4"></div></td>
+                                                    <td><div id="resultado5"></div></td>
+                                                    <td><div id="resultado6"></div></td>
+                                                    <td><div id="resultado7"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p>Peso en Newtons (W) = 
+                                                        <br>(Masa (KG))*(Gravedad de la Tierra(9.81M/S))</p></td>
+                                                    <td><p>Fuerza Aplicada en X =
+                                                        <br>(Coseno del Ángulo)*(Fuerza Aplicada (N))
+                                                    </p></td>
+                                                    <td><p>Fuerza Aplicada en Y =
+                                                        <br>(Seno del Ángulo)*(Fuerza Aplicada (N))</p></td>
+                                                    <td><p>Fuerza Normal = 
+                                                        <br> Peso en Newtons - Fuerza Aplicada en Y
+                                                    </p></td>
+                                                    <td><p>Fuerza Cinética = 
+                                                        <br>(Fuerza Normal)*(Coeficiente de Fricción)
+                                                    </p></td>
+                                                    <td><p>Trabajo Mínimo = 
+                                                        <br>(Fuerza Resultante o Fuerza Cinética)*(Distancia)
+                                                    </p></td>
+                                                    <td><p>Trabajo Resultante = 
+                                                        <br>Sumatoria de Fuerzas (Fuerza Aplicada - Fuerza Cinética)*(Distancia)
+                                                    </p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </main></center>
+                            <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
