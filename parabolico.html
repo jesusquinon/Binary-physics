@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Tiro Parabólico</title>
+		<title>Parabolic Shooting</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,13 +22,13 @@
 					<div id="main">
 						<div class="inner">
 						<center>
-							<h1>Calcular Tiro Parabólico</h1>
+							<h1>Calculate Parabolic Shot</h1>
 							<main>
-                                <label for="vel">Introduzca la Velocidad Inicial:</label>
+                                <label for="vel">Enter the Initial Velocity:</label>
                                 <input [type="text"] { text-align:center; }. id="vel">
                                 <br>
                                 <br>
-                                <label for="gra">Introduzca el Ángulo:</label>
+                                <label for="gra">Enter the Angle:</label>
                                 <input [type="text"] { text-align:center; }. id="gra">
                                 <br>
                                 <br>
@@ -39,17 +39,17 @@
                                 <br>
                                 <br>
                                 <section>
-                                    <h2>Resultados y Procedimientos:</h2>
+                                    <h2>Results and Procedures:</h2>
                                     <div class="table-wrapper">
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Velocidad en X:													</th>
-                                                    <th>Velocidad en Y:													</th>
-                                                    <th>Altura Máxima:</th>
-                                                    <th>Tiempo en Subir:</th>
-                                                    <th>Tiempo en el Aire:</th>
-                                                    <th>Distancia Horizontal:</th>
+                                                    <th>Speed in X:												</th>
+                                                    <th>Speed in Y:													</th>
+                                                    <th>Maximum height:</th>
+                                                    <th>Time to climb:</th>
+                                                    <th>Airtime:</th>
+                                                    <th>Horizontal distance:</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -62,19 +62,19 @@
                                                     <td><div id="resultado4"></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><p> Velocidad en y (Vy) =
-														<br>(Velocidad inicial (vi))*(sen(x°))</p></td>
-														<td><p> Velocidad en x (Vx) =
-															<br>(Velocidad inicial (vi))*(cos(x°))</p></td>
-															<td><p> Altura Maxima (hmax) =
-																<br>(- Velocidad inicial(-Vi))*(- Velocidad inicial(-Vi))/2(Gravedad de la Tierra(9.81M/S))</p></td>
-																<td><p> Tiempo en subir (Tsubir) =
-																	<br>(- Velocidad inicial(-Vi))/(Gravedad de la Tierra(9.81M/S))</p></td>
-																	<td><p> Tiempo en el aire (Taire) =
-																		<br>2(tiempo (t))
+                                                    <td><p> Velocity at y (Vy) =
+														<br>(Initial velocity (vi))*(sin(x°))</p></td>
+														<td><p> Velocity in x (Vx) =
+															<br>(Initial velocity (vi))*(cos(x°))</p></td>
+															<td><p> Maximum height (hmax) =
+																<br>(- Initial Velocity(-Vi))*(- Initial Velocity(-Vi))/2(Earth Gravity(9.81M/S))</p></td>
+																<td><p> Time to climb (Tsubir) =
+																	<br>(- Initial Velocity(-Vi))/(Earth's Gravity(9.81M/S))</p></td>
+																	<td><p> Airtime (Taire) =
+																		<br>2(time (t))
 																		</p></td>
-																		<td><p> Desplazamiento Horizontal (dH) = 
-																			<br>(velocidad en x(Vx))*(Tiempo en el aire(Taire))</p></td>												
+																		<td><p> Horizontal Displacement (dH) =
+																			<br>(velocity at x(Vx))*(Time in air(Taire))</p></td>												
 														<td><p>
 															<br>
 														</p></td>
