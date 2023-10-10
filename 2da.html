@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>segunda Condición</title>
+		<title>Second Condition</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -13,7 +13,7 @@
             }
 
             td{
-                color: black;
+                color: dimgrey;
             }
         </style>
 	</head>
@@ -22,17 +22,17 @@
 					<div id="main">
 						<div class="inner">
                         <center>
-						<h1>Calcular segunda Condición</h1>
+						<h1>Calculate Second Condition</h1>
 							<main>
-                                <label for="num1">Ingrese Masa del Objeto:</label>
+                                <label for="num1">Enter Object Mass:</label>
                                 <input [type="text"] { text-align:center; }. id="num1">
                                 <br>
                                 <br>
-                                <label for="num2">Ingrese Ángulo A:</label>
+                                <label for="num2">Enter Angle A:</label>
                                 <input [type="text"] { text-align:center; }. id="num2">
                                 <br>
                                 <br>
-                                <label for="num3">Ingrese Ángulo B:</label>
+                                <label for="num3">Enter Angle B:</label>
                                 <input [type="text"] { text-align:center; }. id="num3">
                                 <br>
                                 <br>
@@ -43,19 +43,19 @@
                                 <br>
                                 <br>
                                 <section>
-                                    <h2>Resultados y Procedimientos:</h2>
+                                    <h2>Results and Procedures:</h2>
                                     <div class="table-wrapper">
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Peso del Objeto (N):</th>
-                                                    <th>Coseno del Ángulo A</th>
-                                                    <th>Coseno del Ángulo B</th>
-                                                    <th>Seno del Ángulo A</th>
-                                                    <th>Seno del Ángulo B</th>
-                                                    <th>Fuerza Aplicada en el Vector Y (N):</th>
-                                                    <th>Tensión en la Cuerda A (N):</th>
-                                                    <th>Tensión en la Cuerda B (N):</th>
+                                                    <th>Object weight (N):</th>
+                                                    <th>Cosine of Angle A</th>
+                                                    <th>Cosine of Angle B</th>
+                                                    <th>Angle A sinus</th>
+                                                    <th>Angle B sinus</th>
+                                                    <th>Force Applied in the Y Vector (N):</th>
+                                                    <th>Tension in Rope A (N):</th>
+                                                    <th>Tension in Rope B (N):</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -70,31 +70,24 @@
                                                     <td><div id="resultado8"></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><p>Peso en Newtons (W) = 
-                                                        <br>(Masa (KG))*(Gravedad de la Tierra(9.81M/S))</p></td>
+                                                    <td><p>Weight in Newtons (W) =
+                                                        <br>(Mass (KG))*(Earth Gravity(9.81M/S))</p></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
-                                                    <td><p>Fuerza Aplicada en Y =
-                                                        <br>(Coseno del Ángulo A) / (Coseno del Ángulo B)
+                                                    <td><p>Applied Force at Y =
+                                                        <br>(Cosine of Angle A) / (Cosine of Angle B)
                                                     </p></td>
-                                                    <td><p>Tensión en A =
-                                                        <br> Peso en Newtons / (Seno del Ángulo A + Seno del Ángulo B)</p></td>
-                                                    <td><p>Tensión en B = 
-                                                        <br> (Fuerza Aplicada en Y) * (Tensión en la Cuerda A)
+                                                    <td><p>Voltage at A =
+                                                        <br>Weight in Newtons / (Sine of Angle A + Sine of Angle B)</p></td>
+                                                    <td><p>Voltage at B =
+                                                        <br>(Applied Force at Y) * (Tension in Rope A)
                                                     </p></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                             </main></center>
-                            
-                            <script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
